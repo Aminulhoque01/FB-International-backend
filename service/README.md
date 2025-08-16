@@ -15,9 +15,10 @@ This is a template project for backend development using Typescript, Node.js, Ex
 
 Route
 
-- singUp--> http://localhost:5000/api/v1/user/signIn
-- login--> http://localhost:5000/api/v1/user/login
-- profile--> http://localhost:5000/api/v1/user/profile
+- allService--> https://service-kappa-seven.vercel.app/api/v1/service
+- create--> https://service-kappa-seven.vercel.app/api/v1/service/create-service
+- delete--> https://service-kappa-seven.vercel.app/api/v1/service/:id
+- updated->  https://service-kappa-seven.vercel.app/api/v1/service/:id
 
 # this application run:
 
