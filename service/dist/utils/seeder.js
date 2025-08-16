@@ -12,7 +12,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const user_model_1 = require("../app/modules/user/user.model");
 const mongoose_1 = __importDefault(require("mongoose"));
 const dotenv_1 = __importDefault(require("dotenv"));
 // Load environment variables
@@ -47,8 +46,6 @@ const dropDatabase = () => __awaiter(void 0, void 0, void 0, function* () {
 // Function to seed users
 const seedUsers = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        yield user_model_1.User.deleteMany();
-        yield user_model_1.User.insertMany(usersData);
         console.log('Users seeded successfully!');
     }
     catch (err) {
